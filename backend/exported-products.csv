@@ -1,0 +1,4 @@
+id,name,unit,category,brand,stock,status,image
+1,Laptop,piece,Electronics,Dell,15,In Stock,laptop.jpg
+2,Mouse,piece,Electronics,Logitech,50,In Stock,mouse.jpg
+3,Keyboard,piece,Electronics,Corsair,,Out of Stock,keyboard.jpg

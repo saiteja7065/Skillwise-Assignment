@@ -1,0 +1,29 @@
+.category-filter {
+  display: inline-block;
+}
+
+.category-select {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  background: white;
+  cursor: pointer;
+  min-width: 180px;
+  transition: border-color 0.3s ease;
+}
+
+.category-select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.category-select:hover {
+  border-color: #999;
+}
+
+@media (max-width: 768px) {
+  .category-select {
+    width: 100%;
+  }
+}

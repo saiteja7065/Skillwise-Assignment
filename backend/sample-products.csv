@@ -1,0 +1,6 @@
+name,unit,category,brand,stock,status,image
+Monitor,piece,Electronics,Samsung,25,In Stock,monitor.jpg
+Desk Chair,piece,Furniture,IKEA,15,In Stock,chair.jpg
+Notebook,pack,Stationery,Moleskine,100,In Stock,notebook.jpg
+Pen Set,box,Stationery,Parker,0,Out of Stock,pen.jpg
+Webcam,piece,Electronics,Logitech,30,In Stock,webcam.jpg

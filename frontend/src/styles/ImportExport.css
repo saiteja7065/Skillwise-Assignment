@@ -1,0 +1,14 @@
+.import-export {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .import-export {
+    width: 100%;
+  }
+
+  .import-export button {
+    flex: 1;
+  }
+}

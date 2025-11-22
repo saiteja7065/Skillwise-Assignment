@@ -4,6 +4,7 @@ import ProductTable from '../components/ProductTable';
 import SearchBar from '../components/SearchBar';
 import CategoryFilter from '../components/CategoryFilter';
 import ImportExport from '../components/ImportExport';
+import AddProductModal from '../components/AddProductModal';
 import '../styles/ProductsPage.css';
 
 const ProductsPage = () => {
@@ -14,6 +15,7 @@ const ProductsPage = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [categories, setCategories] = useState([]);
+  const [isAddModalOpen, setIsAddModalOpen] = useState(false);
 
   // Fetch all products on component mount
   useEffect(() => {
@@ -74,8 +76,11 @@ const ProductsPage = () => {
   };
 
   const handleAddProduct = () => {
-    // TODO: Open modal/form for adding new product
-    alert('Add Product feature - Coming soon!');
+    setIsAddModalOpen(true);
+  };
+
+  const handleProductAdded = () => {
+    fetchProducts();
   };
 
   return (
@@ -108,6 +113,12 @@ const ProductsPage = () => {
           onProductDelete={fetchProducts}
         />
       )}
+
+      <AddProductModal
+        isOpen={isAddModalOpen}
+        onClose={() => setIsAddModalOpen(false)}
+        onProductAdded={handleProductAdded}
+      />
     </div>
   );
 };
